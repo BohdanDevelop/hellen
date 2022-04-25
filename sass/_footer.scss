@@ -1,0 +1,120 @@
+.footer {
+  padding-top: 35px;
+  padding-bottom: 20px;
+
+  background: linear-gradient(to bottom, #fff 75%, rgba(17, 21, 24, 1) 75%);
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    background: linear-gradient(to bottom, #fff 60%, rgba(17, 21, 24, 1) 60%);
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 52px;
+    background: linear-gradient(to bottom, #fff 65%, rgba(17, 21, 24, 1) 65%);
+  }
+  &__phone-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: -4px;
+    @media screen and (min-width: 768px) {
+      width: 24px;
+      height: 24px;
+      margin-bottom: -1px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 2px;
+    }
+  }
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+  }
+  &__logo-text {
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+  &__number {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17.03 / 14);
+    letter-spacing: 0.08em;
+    color: rgba(17, 21, 24, 1);
+    margin-left: 10px;
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+      line-height: calc(24.38 / 20);
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: calc(36.5 / 30);
+      margin-left: 15px;
+    }
+  }
+  &__phone {
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+    }
+  }
+
+  &__instagram-link {
+    @media screen and (max-width: 768px) {
+      display: block;
+      width: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-left: 25px;
+      padding-left: 25px;
+
+      border-left: 1px solid #b9b9b9;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 376px;
+    }
+  }
+  &__text-inf {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(28 / 14);
+    color: rgba(185, 185, 185, 1);
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      margin-top: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-top: 75px;
+    }
+  }
+  &__address {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      height: 40px;
+    }
+  }
+  &__logo-div {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

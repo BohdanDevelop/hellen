@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Hellen`s English course</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__flex">
+        <div class="logo">
+          <a class="logo__hellen" href="">
+            HELL
+            <svg class="logo__flame" width="21px" height="21px">
+              <use href="./images/symbol-defs.svg#icon-flame"></use>
+            </svg>
+            EN
+          </a>
+          <p class="logo__text">HELLISH <span class="logo__span">ENGLISH</span></p>
+        </div>
+        <nav>
+          <ul class="header__navigation">
+            <li class="header__item"><a class="header__links" href="">STUDYING PROGRAM </a></li>
+            <li class="header__item"><a class="header__links" href="">ABOUT </a></li>
+            <li class="header__item"><a class="header__links" href="">TRAINING OPTIONS </a></li>
+            <li class="header__item"><a class="header__links" href="">CONTACTS </a></li>
+          </ul>
+        </nav>
+        <div class="header__buttons">
+          <button class="header__consultation" type="button">CONSULTATION BY PHONE</button>
+          <button mobile-menu-open class="header__burger" type="button">
+            <svg width="20.5px" height="15px">
+              <use href="./images/symbol-defs.svg#burger"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div mobile-menu class="backdrop is-hidden">
+        <button class="backdrop__cross" mobile-menu-close type="button">
+          <svg width="14.5px" height="14.5px">
+            <use href="./images/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button>
+
+        <div class="backdrop__mobile">
+          <div class="logo backdrop__logo">
+            <a class="logo__hellen backdrop__hellen" href="">
+              HELL
+              <svg class="logo__flame" width="21px" height="21px">
+                <use href="./images/symbol-defs.svg#icon-flame"></use>
+              </svg>
+              EN
+            </a>
+            <p class="logo__text">HELLISH <span class="logo__span backdrop__span">ENGLISH</span></p>
+          </div>
+          <ul class="backdrop__list">
+            <li><a class="backdrop__links" href="">Studying program</a></li>
+            <li><a class="backdrop__links" href="">About</a></li>
+            <li><a class="backdrop__links" href="">Training options</a></li>
+            <li><a class="backdrop__links" href="">Contacts</a></li>
+          </ul>
+          <button type="button" class="backdrop__button">CONSULTATION BY PHONE</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__text-img">
+            <div>
+              <h1 class="hero__heading hero__heading-tablet">
+                Complex preparation <br />
+                for English UPE
+              </h1>
+              <h1 class="hero__heading hero__heading-pc">
+                Complex <br />
+                preparation for <br />
+                English UPE
+              </h1>
+              <h2 class="hero__min-subscript">
+                <span class="hero__gray-letter">It won’t be easy.</span> <br />
+                But you’re are guaranteed to get <br />
+                <span class="hero__orange-letter">+25 points</span>
+              </h2>
+              <h2 class="hero__pc-subscription">
+                <span class="hero__gray-letter">It won’t be easy.</span> <br />
+                But you’re are guaranteed to get +25 points
+              </h2>
+              <button class="hero__button" type="button">i want a free lesson</button>
+            </div>
+            <div class="hero__images">
+              <img
+                class="hero__not-transparent"
+                srcset="
+                  ./images/phone/course.png        178w,
+                  ./images/phone/2x/course@2.png   356w,
+                  ./images/tablet/2x/course@2.png  643w,
+                  ./images/pc/course.png           721w,
+                  ./images/pc/2x/course@2.png     1440w
+                "
+                sizes="(min-width:1280px) 600px, (min-width: 768px) 321px, 177px"
+                alt="courses"
+              />
+              <img
+                class="hero__transparent"
+                srcset="
+                  ./images/phone/transpCourse.png        178w,
+                  ./images/phone/2x/transpCourse@2.png   356w,
+                  ./images/tablet/2x/transpCourse@2.png  643w,
+                  ./images/pc/transpCourse.png           721w,
+                  ./images/pc/2x/transpCourse@2.png     1440w
+                "
+                sizes="(min-width:1280px) 700px, (min-width: 768px) 375px, 177px"
+                alt="courses"
+              />
+            </div>
+          </div>
+          <div class="hero__additional">
+            <div class="hero__svg-text">
+              <svg class="hero__svg">
+                <use href="./images/symbol-defs.svg#icon-women"></use>
+              </svg>
+              <p class="hero__svg-subscript hero__before-px">
+                Adapted author's <br />
+                UPE program
+              </p>
+              <p class="hero__svg-subscript hero__pc-subscript">
+                Adapted author's <br />
+                UPE program
+              </p>
+            </div>
+            <div class="hero__svg-text">
+              <svg class="hero__svg">
+                <use href="./images/symbol-defs.svg#icon-phone-hat"></use>
+              </svg>
+              <p class="hero__svg-subscript hero__before-px">
+                Modern <br />
+                teaching <br />
+                methods
+              </p>
+              <p class="hero__svg-subscript hero__pc-subscript">
+                Modern <br />
+                teaching methods
+              </p>
+            </div>
+            <div class="hero__svg-text">
+              <svg class="hero__svg">
+                <use href="./images/symbol-defs.svg#icon-umbrella"></use>
+              </svg>
+              <p class="hero__svg-subscript hero__before-px">
+                Financial <br />
+                guarantee <br />
+                the result
+              </p>
+              <p class="hero__svg-subscript hero__pc-subscript">
+                Financial guarantee <br />
+                the result
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="black-white">
+        <div class="container">
+          <h2 class="black-white__phone-heading">
+            The main problems <br />
+            of students <br />
+            in English UPE, <br />
+            which <br />
+            we <span class="black-white__help">help</span> to solve
+          </h2>
+          <h2 class="black-white__heading-tablet">
+            The main problems of students <br />
+            in English UPE, which <br />
+            we <span class="black-white__help">help</span> to solve
+          </h2>
+          <div class="black-white__box">
+            <div class="black-white__lis">
+              <p class="black-white__number">— 01</p>
+              <p class="black-white__desc">Grammar</p>
+            </div>
+            <div class="black-white__lis">
+              <p class="black-white__number">— 02</p>
+              <p class="black-white__desc">Inability to understand <br />
+                spoken English</p>
+            </div>
+            <div class="black-white__lis">
+              <p class="black-white__number">— 03</p>
+              <p class="black-white__desc"> Stingy vocabulary for <br />
+                 writing an essay</p>
+            </div>
+            <div class="black-white__lis">
+              <p class="black-white__number">— 04</p>
+              <p class="black-white__desc">Preparing alone</p>
+            </div>
+            <div class="black-white__lis">
+              <p class="black-white__number">— 05</p>
+              <p class="black-white__desc">Lack of a single <br />
+                 knowledge resource</p>
+            </div>
+            <div class="black-white__lis">
+              <p class="black-white__number">— 06</p>
+              <p class="black-white__desc">Lack of self-organization <br /> and laziness</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+        <h2 class="advantages__heading">How do we do it</h2>
+        <div class="advantages__flex">
+        <div class="advantages__box">
+          <svg class="advantages__svg">
+            <use href="./images/symbol-defs.svg#icon-newspapper"></use>
+          </svg>
+          <h3 class="advantages__box-heading">
+          Adapted program <br>
+            preparation for UPE
+          </h3>
+            <p class="advantages__box-streak">—</p>
+          <p class="advantages__box-text">You will learn grammar and vocabulary at the same time. And you will learn how to write essays.</p>
+        </div>
+        <div class="advantages__box">
+          <svg class="advantages__svg">
+            <use href="./images/symbol-defs.svg#icon-mobile-hat-no-border"></use>
+          </svg>
+          <h3 class="advantages__box-heading">
+            Classroom and online learning
+          </h3>
+            <p class="advantages__box-streak">—</p>
+          <p class="advantages__box-text">The teacher will help not only in the classroom, but also during home preparation.Parents can chat if they wish.</p>
+        </div>
+        <div class="advantages__box">
+          <svg class="advantages__svg">
+            <use href="./images/symbol-defs.svg#icon-book"></use>
+          </svg>
+          <h3 class="advantages__box-heading">
+            The habit of reading in English
+          </h3>
+            <p class="advantages__box-streak">—</p>
+          <p class="advantages__box-text">Articles from sources that are used in the development of this UPE will be received by phone twice a week.
+          </p>
+        </div>
+        <div class="advantages__box">
+          <svg class="advantages__svg">
+            <use href="./images/symbol-defs.svg#icon-hand-people"></use>
+          </svg>
+          <h3 class="advantages__box-heading">
+            Psychological <br>
+            support
+          </h3>
+            <p class="advantages__box-streak">—</p>
+          <p class="advantages__box-text"> We will teach you testing techniques, the ability to plan your confidence training
+            in itself.
+          </p>
+        </div>
+        <div class="advantages__box">
+          <svg class="advantages__svg">
+            <use href="./images/symbol-defs.svg#icon-female-student"></use>
+          </svg>
+          <h3 class="advantages__box-heading">
+            Training on copyright manuals
+          </h3>
+            <p class="advantages__box-streak">—</p>
+          <p class="advantages__box-text"> You don't have to waste your time
+            on a search for material and to buy anything extra. We have compiled
+            2 manuals for you.
+          </p>
+        </div>
+        <div class="advantages__box">
+          <svg class="advantages__svg">
+            <use href="./images/symbol-defs.svg#icon-audiobook"></use>
+          </svg>
+          <h3 class="advantages__box-heading">
+            Ability to comprehend spoken English
+          </h3>
+            <p class="advantages__box-streak">—</p>
+          <p class="advantages__box-text">“F.R.I.E.N.D.S” won't help you. You will listen regularly
+            and analyze audio recordings
+            in accordance with the studied vocabulary.
+          </p>
+        </div>
+      </div>
+      </div>
+      </section>
+      <section class='program'>
+        <div class="container">
+          <h2 class="program__heading">Our program</h2>
+        </div>
+        <div class="program__middle-box">
+          <div class="program__line-box"></div>
+          
+            <div class="program__semester-group">
+
+              <div class="program__semester">
+                <svg class="program__circle">
+                  <use href="./images/symbol-defs.svg#icon-Ellipse-3"></use>
+                </svg>
+                <h3 class="program__semester-heading">1 semester</h3>
+                <div class="program__semester-studying">
+                  <div class="program__grammar-vocab">
+                    <h4 class='program__semester-subheading'>— Grammar <br>
+                       </h4>
+                       <p class='program__semester-text'>Nouns & Articles <br/> Adjectives & Adverb</p>
+                  </div>
+                  <div class="program__grammar-vocab"><h4 class='program__semester-subheading'>— Vocabulary</h4>
+                  <p class='program__semester-text'>Family & Relations <br>
+                    People & Society </p>
+                  </div>
+              </div>
+              
+            </div>
+            <div class="program__semester">
+              <svg class="program__circle">
+                <use href="./images/symbol-defs.svg#icon-Ellipse-3"></use>
+              </svg>
+              <h3 class="program__semester-heading">2 semester</h3>
+              <div class="program__semester-studying">
+                <div class="program__grammar-vocab" >
+                  <h4 class='program__semester-subheading'>— Grammar <br>
+                     </h4>
+                     <p class='program__semester-text'>Pronouns <br/>
+                      Active Voice <br>
+                      Passive Voice </p>
+                </div >
+                <div class="program__grammar-vocab"><h4 class='program__semester-subheading'>— Vocabulary</h4>
+                <p class='program__semester-text'>Home <br/>
+                  School <br/>
+                  Work  </p>
+                </div>
+            </div>
+            
+          </div>
+          <div class="program__semester">
+            <svg class="program__circle">
+              <use href="./images/symbol-defs.svg#icon-Ellipse-3"></use>
+            </svg>
+            <h3 class="program__semester-heading">3 semester</h3>
+            <div class="program__semester-studying">
+              <div class="program__grammar-vocab">
+                <h4 class='program__semester-subheading'>— Grammar <br>
+                   </h4>
+                   <p class='program__semester-text'>Modal verbs <br>
+                    Infinitive <br>
+                    Gerund <br>
+                    Participle: 1, 2 </p>
+              </div>
+              <div class="program__grammar-vocab"><h4 class='program__semester-subheading'>— Vocabulary</h4>
+              <p class='program__semester-text'>Travel & Tourism <br/>
+                Culture & Free Time <br/>
+                Sport  </p>
+              </div>
+              <div class="program__grammar-vocab"><h4 class='program__semester-subheading'>— Writing</h4>
+                <p class='program__semester-text'> Informal Letter  </p>
+                </div>
+          </div>
+          
+        </div>
+        <div class="program__semester">
+          <svg class="program__circle">
+            <use href="./images/symbol-defs.svg#icon-Ellipse-3"></use>
+          </svg>
+          <h3 class="program__semester-heading">4 semester</h3>
+          <div class="program__semester-studying">
+            <div class="program__grammar-vocab">
+              <h4 class='program__semester-subheading'>— Grammar <br>
+                 </h4>
+                 <p class='program__semester-text'>Clauses: Conditional <br> and Wishes <br>
+                  Direct / Reported speech <br>
+                  Preposition <br>
+                  Conjunction <br>
+                  Numeral <br>
+                  </p>
+            </div>
+            <div class="program__grammar-vocab"><h4 class='program__semester-subheading'>— Vocabulary</h4>
+            <p class='program__semester-text'>Healthy Living <br/>
+              Nature & Environment <br/>
+              Money <br/>
+              </p>
+            </div>
+            <div class="program__grammar-vocab"><h4 class='program__semester-subheading'>— Writing</h4>
+              <p class='program__semester-text'>Formal Letter
+
+                </p>
+              </div>
+        </div>
+        
+      </div>
+      <div class="program__semester">
+        <svg class="program__circle">
+          <use href="./images/symbol-defs.svg#icon-Ellipse-3"></use>
+        </svg>
+        <h3 class="program__semester-heading">5 semester</h3>
+        <div class="program__semester-studying">
+          <div>
+            <h4 class='program__semester-subheading'>—
+               </h4>
+               <p class='program__semester-text'>Revision <br>
+                Tests
+                </p>
+          </div>
+          
+      </div>
+      
+    </div>
+            </div>
+        </div>
+        <div class="container ">
+          <h2 class='program__additional-info'>Why do people choose us</h2>
+          <img class="program__hellen-looking" srcset="./images/phone/looking.png 120w,
+          ./images/phone/2x/looking@2.png 240w,
+          ./images/tablet/looking.png 384w,
+          ./images/tablet/2x/looking@2.png 768w,
+          ./images/pc/2x/looking@2.png  1344w" 
+          sizes="(min-width:1280px) 550px, (min-width:768px) 384px, 176px"
+          alt="Hellen is looking">
+          <div class="program__info">
+            <div class="program__info-block">
+              <h5 class="program__superscript">— 01</h5>
+              <p class="program__subscript">Training in small groups</p>
+            </div>
+            <div class="program__info-block">
+              <h5 class="program__superscript">— 02</h5>
+              <p class="program__subscript">Rendered notes</p>
+            </div>
+            <div class="program__info-block">
+              <h5 class="program__superscript">— 03</h5>
+              <p class="program__subscript">Each lesson has a goal and <br> a specific result</p>
+            </div>
+            <div class="program__info-block">
+              <h5 class="program__superscript">— 04</h5>
+              <p class="program__subscript">The real results of the <br> teacher</p>
+            </div>
+            <div class="program__info-block">
+              <h5 class="program__superscript">— 05</h5>
+              <p class="program__subscript">The course program meets <br> the requirements of the <br> MES of Ukraine</p>
+            </div>
+            <div class="program__info-block">
+              <h5 class="program__superscript">— 06</h5>
+              <p class="program__subscript">Set of groups by level of <br> knowledge</p>
+            </div>
+          </div>
+        </div>
+      </section>
+     <section class="teacher">
+       <div class="container">
+         <h2 class="teacher__heading">Teacher</h2>
+         <div class="teacher__flex">
+          <img class='teacher__image' srcset="./images/phone/hellen.png 243w,
+          ./images/phone/2x/hellen@2.png 486w,
+          ./images/pc/hellen.png 530w,
+          ./images/pc/2x/hellen@2.png 1060w "
+          sizes="(min-width:1280px) 530px, 243px " 
+          alt="hellen portrait">
+          <div>
+            <h3 class="teacher__name">Elena Moreva</h3>
+            <ul class="teacher__list">
+              <li class="teacher__list-item"><p class="teacher__list-text">6 yeards of experience in preparing students for UPE</p></li>
+              <li class="teacher__list-item"><p class="teacher__list-text">Own result of passing VNO - 197 points 2 years in a row</p></li>
+              <li class="teacher__list-item"><p class="teacher__list-text">Passed excellent at the international analogue of UPE - Cambridge PET (Preliminary English Test)</p></li>
+            </ul>
+            <p class="teacher__strip">—</p>
+            <p class="teacher__text teacher__text-phone">Graduated from the Institute of International Relations of the NAU with a degree in translator-analyst.In spare time takes courses from the best universities in the world on effective teaching and essay writing techniques.Completed: English Grammar and Essay Writing (Berkeley), English Grammar & Style (The University of Queesland), How to Write an Essay (Berkeley), Academic and Business Writing (Berkeley), The Art of Teaching (GEMS education), Powerful Tools for Teaching and Learning (University of Houston).</p>
+            <p class="teacher__text teacher__text-pc">Graduated from the Institute of International Relations of the NAU with a degree in translator-analyst.<br/> <br/>In spare time takes courses from the best universities in the world on effective teaching and essay writing techniques.<br/><br/>Completed: English Grammar and Essay Writing (Berkeley), English Grammar & Style (The University of Queesland), How to Write an Essay (Berkeley), Academic and Business Writing (Berkeley), The Art of Teaching (GEMS education), Powerful Tools for Teaching and Learning (University of Houston).</p>
+          <a class="teacher__certificate" href="">Cambrige English Entry Level Certificate</a>
+          </div>
+         </div>
+       </div>
+     </section>
+     <section class="guarantee">
+       <div class="container">
+       <h2 class="guarantee__heading">We guarantee</h2>
+       
+      </div>
+         <div class="guarantee__text">
+           
+           <div class="guarantee__text-box">
+            <svg class="guarantee__fire">
+              <use href="./images/symbol-defs.svg#icon-flame"></use>
+            </svg>
+             <div class="guarantee__dashed"></div>
+             <p class="guarantee__paragraph">
+             You will pass the UPE with at least 25 points better than on the first practice test. Otherwise, we will refund your money.<span class='guarantee__orange-text'>*</span>
+            </p>
+            </div>
+
+           <div class="guarantee__text-box">
+            <svg class="guarantee__fire">
+              <use href="./images/symbol-defs.svg#icon-flame"></use>
+            </svg>
+             <div class="guarantee__dashed"></div>
+             <p class="guarantee__paragraph">
+             You will learn to write essays with at least 10 points out of 14. <span class="guarantee__orange-text"> While 20% of the students received 0 for essays.</span>
+            </p>
+            </div>
+
+           <div class="guarantee__text-box">
+            <svg class="guarantee__fire">
+              <use href="./images/symbol-defs.svg#icon-flame"></use>
+            </svg>
+             <div class="guarantee__dashed"></div>
+             <p class="guarantee__paragraph">
+             You will pass the UPE with at least 25 points better than on the first practice test. Otherwise, we will refund your money.*
+            </p>
+            </div>
+
+           <div class="guarantee__text-box">
+            <svg class="guarantee__fire">
+              <use href="./images/symbol-defs.svg#icon-flame"></use>
+            </svg>
+            
+             <p class="guarantee__paragraph">
+             You will pass the UPE with at least 25 points better than on the first practice test. Otherwise, we will refund your money.*
+            </p>
+            </div>
+          
+          
+        
+      
+      </div>
+     </section>
+
+     <section class='feedback'>
+<div class="container">
+  <h2 class="feedback__heading">Feedback from graduates</h2>
+  <div class="feedback__comment">
+    <div class="feedback__image-vk">
+      <img srcset="./images/phone/main-girl.png 90w,
+      ./images/phone/2x/main-girl@2.png 180w,
+      ./images/tablet/main-girl.png 150w,
+      ./images/tablet/2x/main-girl@2.png 300w"
+      sizes="(min-width:768px) 150px, 90px"
+       alt=""
+       class="feedback__image">
+       <a href="">
+       <svg class="feedback__vk">
+         <use href="./images/symbol-defs.svg#icon-vk"></use>
+       </svg>
+      </a>
+      
+    </div>
+    <div class="feedback__text">
+      <h3 class="feedback__name">Tonya Kucherovskaya</h3>
+      <p class='feedback__univ'>Graduated from 2015, National University of Bioresources
+        and natural history of Ukraine</p>
+        <p class="feedback__description">In a short time with Elena, I mastered grammar and replenished my completely empty vocabulary. From the first lesson I realized that I was on my plate. Elena and I became friends because she was really worried about my success. She became an authority for me, but I did not tremble in class, fearing to make the slightest mistake. Now I can brag that I'm student ... <a href="" class="feedback__more">Read more</a> </p>
+            </div>
+  </div>
+</div>
+     </section>
+     <section class="registration">
+       <div class="container">
+<h2 class="registration__heading">Registration for a <span class="registration__heading--orange">free</span>  phone <br/> <span class="registration__heading--orange">consultation</span>  on the nuances of English <br/> UPE</h2>
+<h3 class="registration__subheading">Leave a request for participation in a <span class="registration__heading--orange">free lesson</span>. <br>
+  A consultant will contact you and answer your questions</h3>
+<form action="">
+<input class="registration__input" type="input" placeholder="Имя*">
+<input class="registration__input" type="tel" placeholder="Телефон*">
+<button type="submit" class="registration__button">i want a free lesson</button>
+</form>
+</div>
+     </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__flex">
+          <div class="footer__logo-div" >
+          <a class="logo__hellen footer__logo" href="">
+            HELL
+            <svg class="logo__flame" width="21px" height="21px">
+              <use href="./images/symbol-defs.svg#icon-flame"></use>
+            </svg>
+            EN
+          </a>
+          <p class="logo__text footer__logo-text">HELLISH <span class="logo__span">ENGLISH</span></p>
+        </div>
+          <address class="footer__address">
+          <div class="footer__phone">
+            <svg class="footer__phone-icon">
+              <use  href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            <a class="footer__number" href="tel:+38 (000) 000 00 00">+38 (000) 000 00 00</a>
+          </div>
+          <a class="footer__instagram-link"  href="">
+            <img class="footer__instagram" src="./images/instagram.png" alt="instagram icon">
+          </a>
+         </address>
+          </div>
+          <p class='footer__text-inf'>@ All rights reserved, 2019</p>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+.feedback {
+  padding-bottom: 50px;
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 130px;
+  }
+  &__heading {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 20px;
+    line-height: calc(26 / 20);
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 25px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+      font-size: 26px;
+      line-height: calc(34 / 26);
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 46px;
+      line-height: calc(60 / 46);
+    }
+  }
+  &__image-vk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__image {
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 25px;
+    }
+  }
+  &__vk {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 30px;
+  }
+  &__name {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: rgba(255, 107, 9, 1);
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+      line-height: calc(24.57 / 20);
+      text-align: left;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: calc(36 / 30);
+    }
+  }
+  &__univ {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: rgba(185, 185, 185, 1);
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: calc(17 / 14);
+    }
+  }
+  &__description {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(20 / 12);
+    text-align: center;
+    color: #3d3d3d;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 18px;
+      line-height: calc(28 / 18);
+    }
+  }
+  &__more {
+    color: rgba(255, 107, 9, 1);
+  }
+  &__comment {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+      box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    }
+    @media screen and (min-width: 1280px) {
+      width: 1090px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 80px;
+      padding-right: 80px;
+      padding: 50px 80px;
+    }
+  }
+  &__text {
+    @media screen and (min-width: 768px) {
+      margin-left: 40px;
+    }
+  }
+}

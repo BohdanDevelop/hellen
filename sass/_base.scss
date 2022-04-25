@@ -1,0 +1,34 @@
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  @media screen and (min-width: 480px) {
+    max-width: 440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 688px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1250px;
+  }
+}
