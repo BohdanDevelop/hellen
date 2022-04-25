@@ -2137,7 +2137,7 @@ p {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.5px) {
   .footer__instagram-link {
     display: block;
     width: 40px;
